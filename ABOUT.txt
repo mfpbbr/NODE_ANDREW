@@ -77,9 +77,26 @@ heroku keys:add
 heroku keys
 heroku keys:remove
 ssh -v git@heroku.com
+
+cd Desktop/NODE/NODE_ANDREW/SAMPLES/EXPRESS_SAMPLE
 heroku create
+git push heroku master
+https://radiant-dawn-43338.herokuapp.com/ #====> URL deployed to Heroku
+*** OR ***
+heroku open
+
 
 https://dashboard.heroku.com/apps
+https://dashboard.heroku.com/apps/nodeandrew
+
+//==================//
+//== NEW FEATURES ==//
+//==================//
+git status
+git add .
+git commit -m 'MY SECOND COMMIT'
+git push
+git push heroku
 
 //===============//
 //== LOCALHOST ==//
@@ -87,6 +104,8 @@ https://dashboard.heroku.com/apps
 cd Desktop/NODE/NODE_ANDREW/SAMPLES/EXPRESS_SAMPLE
 npm start
 
+//** OR **//
+node server.js
 
 
 // ===================== //

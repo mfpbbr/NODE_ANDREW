@@ -92,6 +92,18 @@ const port = process.env.PORT || 3000;
     // *************** //
   });
 
+  // ===================== //
+  // == PROJECTS ROUTES == //
+  // ===================== //
+  app.get('/projects', (request, response) => {
+    // *************** //
+    response.render('projects.hbs',{
+      pageTitle: 'PROJECTS PAGE'
+    });
+    // *************** //
+  });
+
+
   // =================== //
 	// == ERROR ROUTES == //
 	// ================== //
