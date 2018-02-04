@@ -1,0 +1,93 @@
+// ===================== //
+// =====    NODE   ===== //
+// =====  EXPRESS  ===== //
+// =====    APP    ===== //
+// ===================== //
+  cd Desktop/NODE/NODE_ANDREW/SAMPLES/EXPRESS_SAMPLE
+
+  //==================//
+  //== DEPENDENCIES ==//
+  //==================//
+  npm init
+  npm install express --save
+  npm install hbs --save
+
+  //============//
+  //== SERVER ==//
+  //============//
+  nodemon server.js
+
+  //========//
+  //== OR ==//
+  //========//
+  nodemon server.js -e js,hbs
+
+  //=========//
+  //== GIT ==//
+  //=========//
+  USING:: GITHUB
+  ADDRESS:: git@github.com:mfpbbr/NODE_ANDREW.git
+  COMMANDS::
+            git --version
+            git config --global user.email "mfpbbr@gmail.com"
+            git config --global user.name "miguelfpbbr"
+
+            git init
+            ls -a
+            git status
+            git add views/
+            git add public/html/
+            git add server.js
+            git add package.json
+            git add .gitignore
+            git status
+            git commit -m 'MY FIRST COMMIT'
+
+  //=========//
+  //== SSH ==//
+  //=========//
+  COMMANDS::
+            ls -al ~/.ssh
+            ssh-keygen -t rsa -b 4096 -C 'mfpbbr@gmail.com'
+            eval "$(ssh-agent -s)"
+            ssh-add ~/.ssh/id_rsa
+            cat ~/.ssh/id_rsa.pub #=====> ADD RESULT TO GITHUB <=====#
+            ssh -T git@github.com
+
+
+//============//
+//== DEPLOY ==//
+//============//
+COMMANDS::
+          git remote set-url origin git@github.com:mfpbbr/NODE_ANDREW.git
+          git push -u origin master
+
+//============//
+//== HEROKU ==//
+//============//
+mfpbbr@gmail.com
+goHEERO77
+
+https://toolbelt.heroku.com/
+wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+heroku --version
+heroku --help
+heroku login
+heroku keys:add
+heroku keys
+heroku keys:remove
+ssh -v git@heroku.com
+heroku create
+
+https://dashboard.heroku.com/apps
+
+//===============//
+//== LOCALHOST ==//
+//===============//
+cd Desktop/NODE/NODE_ANDREW/SAMPLES/EXPRESS_SAMPLE
+npm start
+
+
+
+// ===================== //
+// ===================== //

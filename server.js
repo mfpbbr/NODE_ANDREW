@@ -6,7 +6,7 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
-
+const port = process.env.PORT || 3000;
 
 	// ==================== //
 	// == EXPRESS SERVER == //
@@ -106,8 +106,8 @@ const fs = require('fs');
   // =================== //
 	// == EXPRESS START == //
 	// =================== //
-     app.listen(3000, () => {
-       console.log('\n***** CONSOLE UP AND RUNNING ON 3000 *****\n')
+     app.listen(port, () => {
+       console.log(`\n***** CONSOLE UP AND RUNNING ON ${port} *****\n`)
      });
 // ====================== //
 // ====================== //
